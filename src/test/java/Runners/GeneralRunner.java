@@ -5,7 +5,8 @@ import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
         features = {
-                "",
+                "src/test/java/FeatureFiles/US_07SearchFunctionality.feature",//US7
+                "src/test/java/FeatureFiles/US_08WishList.feature",//US8
         },
         glue = {"StepDefinitions"}, // Adım tanımları
         plugin = {"pretty", "html:target/cucumber-reports.html"}, // Raporlama seçenekleri
